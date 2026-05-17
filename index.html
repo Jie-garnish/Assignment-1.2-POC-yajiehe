@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeStay</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>SafeStay</h1>
+    <p>Find trustworthy short-term housing</p>
+  </header>
+
+  <section class="filters">
+
+    <select id="furnishedFilter">
+      <option value="all">All Housing</option>
+      <option value="furnished">Furnished</option>
+      <option value="unfurnished">Unfurnished</option>
+    </select>
+
+    <button onclick="filterListings()">
+      Apply Filter
+    </button>
+
+  </section>
+
+  <section id="listingContainer" class="listings">
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

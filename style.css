@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f9;
+    color: #333;
+  }
+  
+  header {
+    background: #2b6cb0;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  select,
+  button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  button {
+    background: #2b6cb0;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .tag {
+    display: inline-block;
+    margin-top: 10px;
+    background: #e2e8f0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      padding: 1.5rem;
+    }
+  
+    .filters {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
